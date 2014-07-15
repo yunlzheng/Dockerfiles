@@ -23,5 +23,5 @@ docker build -t base/jenkins .
 3, run jenkins container
 
 ```
-docker run -d 0.0.0.0:8080:8080 base/jenkins
+docker run -d -p 0.0.0.0:8080:8080 base/jenkins
 ```
