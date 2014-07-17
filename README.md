@@ -21,6 +21,12 @@ pip install fabric
 fab build
 ```
 
+### Build all images
+
+```
+fab build_all
+```
+
 ### Build image by name
 
 ```
