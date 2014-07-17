@@ -13,21 +13,21 @@ pip install fabric
 
 
 
-## HOW TO USE
+## Usage
 
-### Build basic image __cloud/base__
+**Build basic image __cloud/base__**
 
 ```
 fab build
 ```
 
-### Build all images
+** Build all images **
 
 ```
 fab build_all
 ```
 
-### Build image by name
+** Build image by name **
 
 ```
 fab build_one:jenkins
