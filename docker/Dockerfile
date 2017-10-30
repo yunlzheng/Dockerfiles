@@ -13,7 +13,9 @@ RUN curl -s -L https://get.docker.com/builds/Linux/x86_64/docker-1.9.1 > /usr/bi
 
 # Install Sonar Scanner
 ADD http://of9tskapv.bkt.clouddn.com/sonar-scanner-2.8.zip /usr/local
-RUN cd /usr/local/ && unzip sonar-scanner-2.8.zip && rm *.zip
+ADD http://of9tskapv.bkt.clouddn.com/sonar-scanner-cli-3.0.3.778-linux.zip /usr/local
+RUN cd /usr/local/ && unzip sonar-scanner-2.8.zip && unzip sonar-scanner-cli-3.0.3.778-linux.zip && rm *.zip
+
 
 # Install Docker Compose
 RUN curl -L "http://of9tskapv.bkt.clouddn.com/docker-compose-Linux-x86_64" -o /usr/local/bin/docker-compose
